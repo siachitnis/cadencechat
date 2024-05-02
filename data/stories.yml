@@ -1,5 +1,4 @@
 version: "3.1"
-
 stories:
   - story: happy path
     steps:
@@ -37,3 +36,142 @@ stories:
     steps:
       - intent: ask_for_decision_insights
       - action: utter_decision_insights_response
+
+  - story: Discuss Cash Flow Management
+    steps:
+      - intent: cash_flow_challenges
+      - action: utter_answer_cash_flow_challenges
+      - intent: seek_financial_advice
+      - action: utter_provide_financial_advice
+
+  - story: Inquire About Financial Tools
+    steps:
+      - intent: desired_features_in_financial_tools
+      - action: utter_answer_features_financial_tools
+
+  - story: Financial Struggles and Insights
+    steps:
+      - intent: discuss_financial_struggles
+      - action: utter_discuss_financial_struggles
+      - intent: importance_of_financial_insights
+      - action: utter_answer_financial_insights
+
+  - story: User Asks About Cash Flow Tracking
+    steps:
+      - intent: ask_cash_flow_tracking
+      - action: utter_answer_cash_flow_tracking
+
+  - story: User Asks About Expense Management
+    steps:
+      - intent: ask_expense_management
+      - action: utter_answer_expense_management
+
+  - story: User Asks About Invoicing and Payment
+    steps:
+      - intent: ask_invoicing_payment
+      - action: utter_answer_invoicing_payment
+
+  - story: User Asks About Credit Monitoring
+    steps:
+      - intent: ask_credit_monitoring
+      - action: utter_answer_credit_monitoring
+
+  - story: User Asks About Budgeting Tools
+    steps:
+      - intent: ask_budgeting_tools
+      - action: utter_answer_budgeting_tools
+
+  - story: User Asks About Financial Reporting
+    steps:
+      - intent: ask_financial_reporting
+      - action: utter_answer_financial_reporting
+
+  - story: User Asks About Integration Capabilities
+    steps:
+      - intent: ask_integration_capabilities
+      - action: utter_answer_integration_capabilities
+
+  - story: Collecting Information on Cash Flow Issues
+    steps:
+      - intent: inquire_cash_flow_issues
+      - action: utter_ask_about_cash_flow_issues
+      - action: financial_issue_form
+      - active_loop: financial_issue_form
+      - action: action_submit_form
+      - active_loop: null
+
+  - story: Collecting Information on Cost Reduction
+    steps:
+      - intent: inquire_cost_reduction_strategies
+      - action: utter_ask_about_cost_reduction
+      - action: financial_issue_form
+      - active_loop: financial_issue_form
+      - action: action_submit_form
+      - active_loop: null
+
+  - story: Discussing Cash Flow Management
+    steps:
+      - intent: inquire_about_cash_flow_management
+      - action: utter_ask_about_cash_flow_management
+
+  - story: Exploring Financing Options
+    steps:
+      - intent: inquire_about_financing_options
+      - action: utter_ask_about_financing_options
+
+  - story: Strategy Talk on Cost Management
+    steps:
+      - intent: inquire_about_cost_management_strategies
+      - action: utter_ask_about_cost_management_strategies
+
+  - story: Marketing Funding Inquiries
+    steps:
+      - intent: inquire_about_marketing_funding_options
+      - action: utter_ask_about_marketing_funding_options
+
+  - story: Operational Efficiencies Discussion
+    steps:
+      - intent: inquire_about_operational_efficiencies
+      - action: utter_ask_about_operational_efficiencies
+
+  - story: Technology Integration Needs
+    steps:
+      - intent: inquire_about_technology_integration_needs
+      - action: utter_ask_about_technology_integration_needs
+
+  #Here onwards-- add responses
+  - story: user asks about financial tools
+    steps:
+      - intent: ask_for_financial_tools
+      - action: utter_describe_financial_tools
+      - action: utter_ask_about_specific_tool_needs
+
+  - story: discussing cash flow management challenges
+    steps:
+      - intent: cash_flow_management_challenges
+      - action: utter_explain_cash_flow_management_challenges
+      - action: utter_offer_solutions_for_cash_flow_management
+
+  - story: inquiry about credit access difficulties
+    steps:
+      - intent: inquire_credit_access_difficulties
+      - action: utter_ask_about_credit_challenges
+      - action: utter_provide_credit_access_tips
+
+  - story: inquiring about preferences in financial tools
+    steps:
+      - intent: inquire_financial_tools_preferences
+      - action: utter_ask_about_tool_preferences
+      - action: utter_suggest_popular_financial_tools
+
+  - story: inquiring about operational challenges
+    steps:
+      - intent: inquire_operational_challenges
+      - action: utter_ask_about_operational_issues
+      - action: utter_discuss_operational_solutions
+
+  - story: inquiry about seasonal impact
+    steps:
+      - intent: inquire_seasonal_impact
+      - action: utter_ask_about_seasonal_changes
+      - action: utter_discuss_seasonal_strategy

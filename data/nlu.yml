@@ -1,3 +1,4 @@
+version: "3.1"
 nlu:
   - intent: greet
     examples: |
@@ -103,3 +104,185 @@ nlu:
     examples: |
       - What key features do you need in a tool to better manage your cash?
       - Features needed to enhance cash management and build business credit.
+
+  - intent: cash_flow_management_challenges
+    examples: |
+      - "Managing seasonal variability in income is a big challenge for me."
+      - "I struggle with irregular client payments which disrupt my cash flow."
+      - "High upfront costs for marketing make it difficult to manage my finances."
+      - "Unexpected expenses like equipment repairs throw off my budget."
+
+  - intent: importance_of_financial_insights
+    examples: |
+      - text: "I need insights to better understand how to manage my spending."
+      - text: "Insights into cash flow trends help me plan better for the future."
+      - text: "Knowing more about my financial health helps me make timely business decisions."
+
+  - intent: features_needed_in_financial_tools
+    examples: |
+      - text: "I would like a tool that offers real-time tracking of all my accounts."
+      - text: "The tool needs to provide forecasting and alert me about financial risks."
+      - text: "I'm looking for software that integrates with my existing accounting systems."
+
+  - intent: budgeting_for_financial_tools
+    examples: |
+      - text: "My budget for a financial management tool is around $500 to $1000 annually."
+      - text: "I can't afford expensive tools, so something under $100 a month would be ideal."
+
+  - intent: describing_business_operations
+    examples: |
+      - text: "As a small business owner, I face challenges with variable costs and cash flow."
+      - text: "Running a non-profit, I depend heavily on grants and donations which are unpredictable."
+
+  - intent: inquire_seasonal_impact
+    examples: |
+      - text: "How does seasonal variability affect our business?"
+      - text: "What impact does the season have on our sales?"
+      - text: "Can you tell me how the change in seasons affects customer demand?"
+      - text: "How do different seasons impact our supply chain and inventory levels?"
+
+  - intent: ask_seasonal_strategies
+    examples: |
+      - text: "What strategies can we implement to cope with seasonal demand?"
+      - text: "How should we prepare our inventory for the peak season?"
+      - text: "What can we do to minimize the impact of off-peak seasons?"
+      - text: "Can you suggest ways to boost sales during the slow seasons?"
+
+  - intent: request_seasonal_trends_data
+    examples: |
+      - text: "Can you show me the sales trends over different seasons?"
+      - text: "I need a report on how seasons affect our market segments."
+      - text: "Provide me with seasonal sales data for the past three years."
+      - text: "Show data on past seasonal effects on our operations."
+
+  - intent: discuss_seasonal_adaptations
+    examples: |
+      - text: "How have we adapted to seasonal changes in the past?"
+      - text: "What changes should we consider for the upcoming high season?"
+      - text: "Discuss our previous adaptations to the holiday season traffic."
+      - text: "What are our plans to handle the expected seasonal rush?"
+
+  - intent: cash_flow_challenges
+    examples: |
+      - I have problems with irregular client payments.
+      - Seasonal income variations make it hard to manage finances.
+      - How do I handle unexpected high expenses?
+
+  - intent: importance_of_financial_insights
+    examples: |
+      - Why are financial insights important for my business?
+      - How can insights help me better manage my cash flow?
+      - Tell me how knowing more about my financial health could help.
+
+  - intent: desired_features_in_financial_tools
+    examples: |
+      - I need a tool that integrates with QuickBooks.
+      - What features should a good financial management tool have?
+      - Can you suggest a tool that offers real-time cash flow tracking?
+
+  - intent: seek_financial_advice
+    examples: |
+      - How can I improve my financial literacy?
+      - I need advice on budgeting and expense management.
+
+  - intent: discuss_financial_struggles
+    examples: |
+      - It's hard finding grants for my business.
+      - I'm struggling with debt management.
+
+  - intent: ask_cash_flow_tracking
+    examples: |
+      - Can you show me how to track my cash flow?
+      - What tools are available for cash flow tracking?
+      - How can I monitor my daily cash flow?
+
+  - intent: ask_expense_management
+    examples: |
+      - How do I manage my business expenses better?
+      - Show me tools that help with expense management.
+      - I need a way to control my overhead costs.
+
+  - intent: ask_invoicing_payment
+    examples: |
+      - What's the best way to handle invoicing and payments?
+      - Can you recommend a system for managing my invoices?
+      - How do I streamline my payment processes?
+
+  - intent: ask_credit_monitoring
+    examples: |
+      - How can I keep track of my business credit score?
+      - What tools help with monitoring credit?
+      - I need to monitor my credit, what do you recommend?
+
+  - intent: ask_budgeting_tools
+    examples: |
+      - What are some effective budgeting tools?
+      - Can you help me find budgeting software?
+      - How do I create a budget for my business?
+
+  - intent: ask_financial_reporting
+    examples: |
+      - How do I generate financial reports?
+      - I need tools for financial reporting, any suggestions?
+      - Show me how to make detailed financial reports.
+
+  - intent: ask_integration_capabilities
+    examples: |
+      - What tools integrate well with QuickBooks?
+      - Can your system integrate with my existing software?
+      - I need a solution that integrates with multiple platforms.
+
+  - intent: inquire_cash_flow_issues
+    examples: |
+      - Tell me about the cash flow issues your business is facing.
+      - What are the biggest challenges with cash flow in your industry?
+
+  - intent: inquire_cost_reduction_strategies
+    examples: |
+      - How do you plan to reduce operational costs?
+      - What strategies are you considering for cost management?
+
+  - intent: inquire_credit_access_difficulties
+    examples: |
+      - What difficulties are you facing in accessing credit?
+      - Can you describe your experiences with obtaining business loans?
+
+  - intent: inquire_financial_tools_preferences
+    examples: |
+      - What features do you look for in financial management tools?
+      - What kind of financial tools do you think would help your business?
+
+  - intent: inquire_operational_challenges
+    examples: |
+      - What operational challenges does your business encounter?
+      - How do you handle operational inefficiencies?
+
+  - intent: inquire_about_cash_flow_management
+    examples: |
+      - How do seasonal changes affect your cash flow?
+      - Can you describe the unpredictability in your cash flow and its impacts?
+
+  - intent: inquire_about_financing_options
+    examples: |
+      - What challenges do you face when trying to secure funding?
+      - Have you experienced difficulties with obtaining loans or credit?
+
+  - intent: inquire_about_cost_management_strategies
+    examples: |
+      - What strategies are you considering to manage or reduce your business costs?
+      - How do you plan to tackle rising operational costs?
+
+  - intent: inquire_about_marketing_funding_options
+    examples: |
+      - How do you fund your marketing activities?
+      - What budget constraints are you facing in advertising and promotion?
+
+  - intent: inquire_about_operational_efficiencies
+    examples: |
+      - What operational challenges impact your business the most?
+      - How do you handle inefficiencies in your business processes?
+
+  - intent: inquire_about_technology_integration_needs
+    examples: |
+      - What technology solutions are you looking to integrate into your business?
+      - How important is software integration for your business operations?

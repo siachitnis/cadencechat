@@ -1,5 +1,4 @@
 version: "3.1"
-
 intents:
   - greet
   - goodbye
@@ -11,33 +10,82 @@ intents:
   - ask_cash_flow_challenges
   - ask_for_decision_insights
   - ask_for_financial_tools
+  - cash_flow_challenges
+  - importance_of_financial_insights
+  - desired_features_in_financial_tools
+  - seek_financial_advice
+  - discuss_financial_struggles
+  - cash_flow_management_challenges
+  - inquire_seasonal_impact
+  - ask_cash_flow_tracking
+  - ask_expense_management
+  - ask_invoicing_payment
+  - ask_credit_monitoring
+  - ask_budgeting_tools
+  - ask_financial_reporting
+  - ask_integration_capabilities
+  - inquire_cash_flow_issues
+  - inquire_cost_reduction_strategies
+  - inquire_credit_access_difficulties
+  - inquire_financial_tools_preferences
+  - inquire_operational_challenges
+  - inquire_about_cash_flow_management
+  - inquire_about_financing_options
+  - inquire_about_cost_management_strategies
+  - inquire_about_marketing_funding_options
+  - inquire_about_operational_efficiencies
+  - inquire_about_technology_integration_needs
+  - describing_business_operations
+  - discuss_seasonal_adaptations
+  - request_seasonal_trends_data
+  - features_needed_in_financial_tools
+  - ask_seasonal_strategies
+  - budgeting_for_financial_tools
 
 responses:
   utter_greet:
     - text: "Hey! How are you?"
-
   utter_cheer_up:
     - text: "Here is something to cheer you up:"
       image: "https://i.imgur.com/nGF1K8f.jpg"
-
   utter_did_that_help:
     - text: "Did that help you?"
-
   utter_happy:
     - text: "Great, carry on!"
-
   utter_goodbye:
     - text: "Bye"
-
   utter_iamabot:
     - text: "I am a bot, powered by Rasa."
-
   utter_cash_flow_challenges_response:
     - text: "Managing cash flow can be challenging due to irregular income, high expenses, and unforeseen events. It's important to have a robust tool that can help forecast and manage these challenges."
-
   utter_decision_insights_response:
     - text: "Having accurate and actionable insights is crucial for making informed decisions about your spending and investments to grow your business effectively."
-
+  utter_answer_cash_flow_challenges:
+    - text: "Managing cash flow effectively requires careful planning and tools that offer real-time financial insights and forecasts."
+  utter_answer_financial_insights:
+    - text: "Financial insights are crucial as they help you understand your financial health, enabling better decision making and future planning."
+  utter_answer_features_financial_tools:
+    - text: "A good financial tool should offer features like budgeting, expense tracking, financial reporting, and easy integration with existing accounting software."
+  utter_provide_financial_advice:
+    - text: "Improving financial literacy can start with understanding basic financial terms, using budgeting apps, and possibly consulting with a financial advisor."
+  utter_discuss_financial_struggles:
+    - text: "Dealing with financial struggles often requires reassessing your budget, exploring financing options, and possibly seeking advice from financial experts."
+  utter_seasonal_impact:
+    - text: "Seasonal changes can significantly influence various aspects of our business, from fluctuating demand to supply chain disruptions. Preparing for these changes is crucial for maintaining steady operations."
+  utter_ask_about_cash_flow_management:
+    - text: "Please describe how you manage cash flow in your business."
+  utter_answer_cash_flow_tracking:
+    - text: "Tracking your cash flow can be managed through tools like QuickBooks or our custom dashboard that provides real-time financial insights."
+  utter_answer_expense_management:
+    - text: "Our expense management tools help you categorize expenses, set spending limits, and track transactions in real time."
+  utter_answer_invoicing_payment:
+    - text: "We recommend using tools like Stripe for payments and FreshBooks for invoicing to streamline your billing processes."
+  utter_answer_credit_monitoring:
+    - text: "Monitoring your credit can be effectively managed with services like Credit Karma that offer regular updates and alerts."
+  utter_answer_integration_capabilities:
+    - text: "Our platform integrates seamlessly with systems like Salesforce, HubSpot, and various accounting software to ensure data coherence."
+actions:
+  - action_submit_form # Define this if it's a custom action or ensure it's implemented
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
