@@ -173,5 +173,4 @@ stories:
   - story: inquiry about seasonal impact
     steps:
       - intent: inquire_seasonal_impact
-      - action: utter_ask_about_seasonal_changes
-      - action: utter_discuss_seasonal_strategy
+      - action: utter_seasonal_impact

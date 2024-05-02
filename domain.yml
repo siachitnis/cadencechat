@@ -72,6 +72,10 @@ responses:
     - text: "Dealing with financial struggles often requires reassessing your budget, exploring financing options, and possibly seeking advice from financial experts."
   utter_seasonal_impact:
     - text: "Seasonal changes can significantly influence various aspects of our business, from fluctuating demand to supply chain disruptions. Preparing for these changes is crucial for maintaining steady operations."
+    - text: “Seasonal sports with fluctuations in participation and revenue throughout the year poses challenges. Managing cash flow during offseasons when revenue is lower can be challenging, requiring careful budgeting and financial planning to ensure ongoing operational costs can be covered.”
+    - text: "Seasonal variability poses challenges. While there may be peaks in demand during certain times of the year, there may also be lulls in demand during quieter periods. Predicting and planning for these fluctuations in cash flow can be challenging, requiring careful forecasting and strategic resource allocation to ensure we can meet demand while maintaining financial stability."
+    - text: “Seasonal fluctuations in sales, leads to unpredictable cash flow patterns. Anticipating these fluctuations and ensuring adequate cash reserves during slow periods is essential to maintain liquidity.”
+
   utter_ask_about_cash_flow_management:
     - text: "Please describe how you manage cash flow in your business."
   utter_answer_cash_flow_tracking:
