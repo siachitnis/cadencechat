@@ -1,0 +1,39 @@
+version: "3.1"
+
+stories:
+  - story: happy path
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: mood_great
+      - action: utter_happy
+
+  - story: sad path 1
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: mood_unhappy
+      - action: utter_cheer_up
+      - action: utter_did_that_help
+      - intent: affirm
+      - action: utter_happy
+
+  - story: sad path 2
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: mood_unhappy
+      - action: utter_cheer_up
+      - action: utter_did_that_help
+      - intent: deny
+      - action: utter_goodbye
+
+  - story: cash flow challenges query
+    steps:
+      - intent: ask_cash_flow_challenges
+      - action: utter_cash_flow_challenges_response
+
+  - story: decision insights query
+    steps:
+      - intent: ask_for_decision_insights
+      - action: utter_decision_insights_response

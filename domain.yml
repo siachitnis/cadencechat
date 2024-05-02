@@ -1,0 +1,43 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - ask_cash_flow_challenges
+  - ask_for_decision_insights
+  - ask_for_financial_tools
+
+responses:
+  utter_greet:
+    - text: "Hey! How are you?"
+
+  utter_cheer_up:
+    - text: "Here is something to cheer you up:"
+      image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+    - text: "Did that help you?"
+
+  utter_happy:
+    - text: "Great, carry on!"
+
+  utter_goodbye:
+    - text: "Bye"
+
+  utter_iamabot:
+    - text: "I am a bot, powered by Rasa."
+
+  utter_cash_flow_challenges_response:
+    - text: "Managing cash flow can be challenging due to irregular income, high expenses, and unforeseen events. It's important to have a robust tool that can help forecast and manage these challenges."
+
+  utter_decision_insights_response:
+    - text: "Having accurate and actionable insights is crucial for making informed decisions about your spending and investments to grow your business effectively."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
