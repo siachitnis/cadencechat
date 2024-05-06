@@ -27,150 +27,107 @@ stories:
       - intent: deny
       - action: utter_goodbye
 
-  - story: cash flow challenges query
+  - story: ask pain points query
     steps:
-      - intent: ask_cash_flow_challenges
-      - action: utter_cash_flow_challenges_response
+      - intent: ask_pain_points
+      - action: utter_pain_point_responses
 
-  - story: decision insights query
+  - story: ask seasonal variability query
     steps:
-      - intent: ask_for_decision_insights
-      - action: utter_decision_insights_response
+      - intent: ask_seasonal_variability
+      - action: utter_seasonal_variability
 
-  - story: Discuss Cash Flow Management
+  - story: ask inventory query
     steps:
-      - intent: cash_flow_challenges
-      - action: utter_answer_cash_flow_challenges
-      - intent: seek_financial_advice
-      - action: utter_provide_financial_advice
+      - intent: ask_inventory
+      - action: utter_inventory
 
-  - story: Inquire About Financial Tools
+  - story: ask delayed payments query
     steps:
-      - intent: desired_features_in_financial_tools
-      - action: utter_answer_features_financial_tools
+      - intent: ask_delayed
+      - action: utter_delayed_payments
 
-  - story: Financial Struggles and Insights
+  - story: ask unforeseen query
     steps:
-      - intent: discuss_financial_struggles
-      - action: utter_discuss_financial_struggles
-      - intent: importance_of_financial_insights
-      - action: utter_answer_financial_insights
+      - intent: ask_unforeseen
+      - action: utter_unforeseen
 
-  - story: User Asks About Cash Flow Tracking
+  - story: ask market query
     steps:
-      - intent: ask_cash_flow_tracking
-      - action: utter_answer_cash_flow_tracking
+      - intent: ask_market
+      - action: utter_market
 
-  - story: User Asks About Expense Management
+  - story: ask debt query
     steps:
-      - intent: ask_expense_management
-      - action: utter_answer_expense_management
+      - intent: ask_debt
+      - action: utter_debt
 
-  - story: User Asks About Invoicing and Payment
+  - story: ask investments query
     steps:
-      - intent: ask_invoicing_payment
-      - action: utter_answer_invoicing_payment
+      - intent: ask_investments
+      - action: utter_investments
 
-  - story: User Asks About Credit Monitoring
+  - story: ask funding query
     steps:
-      - intent: ask_credit_monitoring
-      - action: utter_answer_credit_monitoring
+      - intent: ask_funding
+      - action: utter_funding
 
-  - story: User Asks About Budgeting Tools
+  - story: ask grants query
     steps:
-      - intent: ask_budgeting_tools
-      - action: utter_answer_budgeting_tools
+      - intent: ask_grants
+      - action: utter_grants
 
-  - story: User Asks About Financial Reporting
+  - story: ask budgeting knowledge query
     steps:
-      - intent: ask_financial_reporting
-      - action: utter_answer_financial_reporting
+      - intent: ask_budgeting
+      - action: utter_budgeting_knowledge
 
-  - story: User Asks About Integration Capabilities
+  - story: ask general feature query
     steps:
-      - intent: ask_integration_capabilities
-      - action: utter_answer_integration_capabilities
+      - intent: desire_feature_general
+      - action: utter_general_desire
 
-  - story: Collecting Information on Cash Flow Issues
+  - story: ask cashflow feature query
     steps:
-      - intent: inquire_cash_flow_issues
-      - action: utter_ask_about_cash_flow_issues
-      - action: financial_issue_form
-      - active_loop: financial_issue_form
-      - action: action_submit_form
-      - active_loop: null
+      - intent: desire_feature_cashflow
+      - action: utter_feature_cashflow
 
-  - story: Collecting Information on Cost Reduction
+  - story: ask expense management feature query
     steps:
-      - intent: inquire_cost_reduction_strategies
-      - action: utter_ask_about_cost_reduction
-      - action: financial_issue_form
-      - active_loop: financial_issue_form
-      - action: action_submit_form
-      - active_loop: null
+      - intent: desire_feature_expensemanage
+      - action: utter_feature_expensemanage
 
-  - story: Discussing Cash Flow Management
+  - story: ask invoicing payment feature query
     steps:
-      - intent: inquire_about_cash_flow_management
-      - action: utter_ask_about_cash_flow_management
+      - intent: desire_feature_invoicingpayment
+      - action: utter_feature_invoicingpayment
 
-  - story: Exploring Financing Options
+  - story: ask budgeting tools feature query
     steps:
-      - intent: inquire_about_financing_options
-      - action: utter_ask_about_financing_options
+      - intent: desire_feature_budgetingtools
+      - action: utter_feature_budgetingtools
 
-  - story: Strategy Talk on Cost Management
+  - story: ask financial reporting feature query
     steps:
-      - intent: inquire_about_cost_management_strategies
-      - action: utter_ask_about_cost_management_strategies
+      - intent: desire_feature_financialreporting
+      - action: utter_feature_financialreporting
 
-  - story: Marketing Funding Inquiries
+  - story: ask feature integration query
     steps:
-      - intent: inquire_about_marketing_funding_options
-      - action: utter_ask_about_marketing_funding_options
+      - intent: desire_feature_integration
+      - action: utter_feature_integration
 
-  - story: Operational Efficiencies Discussion
+  - story: ask willing to pay
     steps:
-      - intent: inquire_about_operational_efficiencies
-      - action: utter_ask_about_operational_efficiencies
+      - intent: ask_willing_to_pay
+      - action: utter_willing_to_pay
 
-  - story: Technology Integration Needs
+  - story: ask why AI
     steps:
-      - intent: inquire_about_technology_integration_needs
-      - action: utter_ask_about_technology_integration_needs
+      - intent: ask_why_AI
+      - action: utter_why_AI
 
-  #Here onwards-- add responses
-  - story: user asks about financial tools
+  - story: ask utter AI financial
     steps:
-      - intent: ask_for_financial_tools
-      - action: utter_describe_financial_tools
-      - action: utter_ask_about_specific_tool_needs
-
-  - story: discussing cash flow management challenges
-    steps:
-      - intent: cash_flow_management_challenges
-      - action: utter_explain_cash_flow_management_challenges
-      - action: utter_offer_solutions_for_cash_flow_management
-
-  - story: inquiry about credit access difficulties
-    steps:
-      - intent: inquire_credit_access_difficulties
-      - action: utter_ask_about_credit_challenges
-      - action: utter_provide_credit_access_tips
-
-  - story: inquiring about preferences in financial tools
-    steps:
-      - intent: inquire_financial_tools_preferences
-      - action: utter_ask_about_tool_preferences
-      - action: utter_suggest_popular_financial_tools
-
-  - story: inquiring about operational challenges
-    steps:
-      - intent: inquire_operational_challenges
-      - action: utter_ask_about_operational_issues
-      - action: utter_discuss_operational_solutions
-
-  - story: inquiry about seasonal impact
-    steps:
-      - intent: inquire_seasonal_impact
-      - action: utter_seasonal_impact
+      - intent: ask_AI_financial
+      - action: utter_AI_financial

@@ -7,40 +7,27 @@ intents:
   - mood_great
   - mood_unhappy
   - bot_challenge
-  - ask_cash_flow_challenges
-  - ask_for_decision_insights
-  - ask_for_financial_tools
-  - cash_flow_challenges
-  - importance_of_financial_insights
-  - desired_features_in_financial_tools
-  - seek_financial_advice
-  - discuss_financial_struggles
-  - cash_flow_management_challenges
-  - inquire_seasonal_impact
-  - ask_cash_flow_tracking
-  - ask_expense_management
-  - ask_invoicing_payment
-  - ask_credit_monitoring
-  - ask_budgeting_tools
-  - ask_financial_reporting
-  - ask_integration_capabilities
-  - inquire_cash_flow_issues
-  - inquire_cost_reduction_strategies
-  - inquire_credit_access_difficulties
-  - inquire_financial_tools_preferences
-  - inquire_operational_challenges
-  - inquire_about_cash_flow_management
-  - inquire_about_financing_options
-  - inquire_about_cost_management_strategies
-  - inquire_about_marketing_funding_options
-  - inquire_about_operational_efficiencies
-  - inquire_about_technology_integration_needs
-  - describing_business_operations
-  - discuss_seasonal_adaptations
-  - request_seasonal_trends_data
-  - features_needed_in_financial_tools
-  - ask_seasonal_strategies
-  - budgeting_for_financial_tools
+  - ask_pain_points
+  - ask_seasonal_variability
+  - ask_inventory
+  - ask_delayed
+  - ask_unforeseen
+  - ask_market
+  - ask_debt
+  - ask_investments
+  - ask_funding
+  - ask_grants
+  - ask_budgeting
+  - desire_feature_general
+  - desire_feature_cashflow
+  - desire_feature_expensemanage
+  - desire_feature_invoicingpayment
+  - desire_feature_budgetingtools
+  - desire_feature_financialreporting
+  - desire_feature_integration
+  - ask_willing_to_pay
+  - ask_why_AI
+  - ask_AI_financial
 
 responses:
   utter_greet:
@@ -56,40 +43,45 @@ responses:
     - text: "Bye"
   utter_iamabot:
     - text: "I am a bot, powered by Rasa."
-  utter_cash_flow_challenges_response:
-    - text: "Managing cash flow can be challenging due to irregular income, high expenses, and unforeseen events. It's important to have a robust tool that can help forecast and manage these challenges."
-  utter_decision_insights_response:
-    - text: "Having accurate and actionable insights is crucial for making informed decisions about your spending and investments to grow your business effectively."
-  utter_answer_cash_flow_challenges:
-    - text: "Managing cash flow effectively requires careful planning and tools that offer real-time financial insights and forecasts."
-  utter_answer_financial_insights:
-    - text: "Financial insights are crucial as they help you understand your financial health, enabling better decision making and future planning."
-  utter_answer_features_financial_tools:
-    - text: "A good financial tool should offer features like budgeting, expense tracking, financial reporting, and easy integration with existing accounting software."
-  utter_provide_financial_advice:
-    - text: "Improving financial literacy can start with understanding basic financial terms, using budgeting apps, and possibly consulting with a financial advisor."
-  utter_discuss_financial_struggles:
-    - text: "Dealing with financial struggles often requires reassessing your budget, exploring financing options, and possibly seeking advice from financial experts."
-  utter_seasonal_impact:
-    - text: "Seasonal changes can significantly influence various aspects of our business, from fluctuating demand to supply chain disruptions. Preparing for these changes is crucial for maintaining steady operations."
-    - text: “Seasonal sports with fluctuations in participation and revenue throughout the year poses challenges. Managing cash flow during offseasons when revenue is lower can be challenging, requiring careful budgeting and financial planning to ensure ongoing operational costs can be covered.”
-    - text: "Seasonal variability poses challenges. While there may be peaks in demand during certain times of the year, there may also be lulls in demand during quieter periods. Predicting and planning for these fluctuations in cash flow can be challenging, requiring careful forecasting and strategic resource allocation to ensure we can meet demand while maintaining financial stability."
-    - text: “Seasonal fluctuations in sales, leads to unpredictable cash flow patterns. Anticipating these fluctuations and ensuring adequate cash reserves during slow periods is essential to maintain liquidity.”
-
-  utter_ask_about_cash_flow_management:
-    - text: "Please describe how you manage cash flow in your business."
-  utter_answer_cash_flow_tracking:
-    - text: "Tracking your cash flow can be managed through tools like QuickBooks or our custom dashboard that provides real-time financial insights."
-  utter_answer_expense_management:
-    - text: "Our expense management tools help you categorize expenses, set spending limits, and track transactions in real time."
-  utter_answer_invoicing_payment:
-    - text: "We recommend using tools like Stripe for payments and FreshBooks for invoicing to streamline your billing processes."
-  utter_answer_credit_monitoring:
-    - text: "Monitoring your credit can be effectively managed with services like Credit Karma that offer regular updates and alerts."
-  utter_answer_integration_capabilities:
-    - text: "Our platform integrates seamlessly with systems like Salesforce, HubSpot, and various accounting software to ensure data coherence."
-actions:
-  - action_submit_form # Define this if it's a custom action or ensure it's implemented
-session_config:
-  session_expiration_time: 60
-  carry_over_slots_to_new_session: true
+  utter_pain_point_responses:
+    - text: “The biggest struggles we are facing are limited funding, unpredictable costs, inconsistent cashflow, hard time finding and applying to grants, slowing economy concerns, and lack of budgeting knowledge. Moreover, there's seasonal variability that affects how my business performs throughout the year. Managing inventory and dealing with delayed payments are continual headaches. Unforeseen expenses crop up more often than I'd like, and market volatility makes financial forecasting a nightmare. I’m also struggling with managing debt and finding funds for necessary growth investments in my business.”
+  utter_seasonal_variability:
+    - text: “One of our challenges is seasonal variability. Seasonal changes impact various business aspects, including demand, supply chain, and revenue, leading to fluctuations that can disrupt operations. These changes necessitate careful planning and budgeting to manage cash flow, especially during off-seasons when revenue dips. We need to anticipate these periods of high and low demand to ensure financial stability by forecasting accurately and maintaining sufficient cash reserves to handle slow periods and meet operational costs.”
+  utter_inventory:
+    - text: “Inventory management presents a significant challenge to us due to the inherent seasonal fluctuations in demand. These fluctuations complicate forecasting, requiring precise strategies to maintain optimal inventory levels without overstocking or running into stockouts. This challenge is further compounded by the need to manage cash flow effectively during off-peak seasons when our revenue is lower, and to adjust rapidly to market conditions that can shift unexpectedly due to economic factors or changes in consumer behavior.”
+  utter_delayed_payments:
+    - text: “As a business owner, I frequently face challenges with delayed payments, which cause significant disruptions to our cash flow. These delays, often due to slow insurance reimbursements or extended client payment cycles, impact our ability to meet financial obligations on time. To manage this, we use historical data to predict cash flow needs, maintain reserves for unexpected costs, and encourage timely payments through efficient invoicing systems. We continuously adjust our cash flow forecasts and strategies to ensure we can cover ongoing expenses like salaries and maintenance, and invest carefully in necessary capital improvements. Managing these payment delays effectively is crucial for maintaining our financial stability.”
+  utter_unforeseen:
+    - text: “Facing unforeseen expenses is a major concern in financial planning. External factors like economic downturns or sudden regulatory changes can throw off our cash flow forecasts. I must continuously adapt and have contingency plans in place to mitigate these financial risks. Whether it's equipment repairs, regulatory compliance costs, or unexpected events like pandemics, these unforeseen expenses can strain our cash reserves and disrupt projections. Equipment breakdowns, maintenance issues, or legal matters are all potential culprits. Without proper planning, these expenses can cause significant cash flow disruptions and financial strain.”
+  utter_market:
+    - text: “Market volatility affects our businesses across various industries by introducing uncertainty in cash flow and financial planning. Fluctuations in market conditions, economic downturns, and shifts in consumer preferences can disrupt our sales and complicate cash flow forecasting. This requires us to remain adaptable, frequently revising our strategies and implementing contingency plans to mitigate risks.”
+  utter_debt:
+    - text: “Managing debt payments is a significant challenge in running my business, especially during times of economic uncertainty or tight liquidity. Handling loan repayments, interest rates, and maintaining terms while also keeping enough cash reserves for day-to-day operations requires careful prioritization and budgeting. I engage in rigorous financial planning and keep a close eye on performance indicators to navigate these complexities. Balancing these debt obligations with other cash flow needs is crucial for sustaining my business's financial health.”
+  utter_investments:
+    - text: “Investing in my business's growth, such as developing new products or expanding services, is challenging due to the need to balance these investments with existing cash flow constraints. Strategic decisions, like hiring new staff, upgrading equipment, or launching marketing initiatives, require careful financial planning to ensure they are sustainably financed. Balancing the upfront costs of these growth investments with the uncertainty of returns and maintaining daily operations is crucial. This balancing act is essential for ensuring that expansion efforts do not jeopardize the overall financial health of the business.”
+  utter_funding:
+    - text: “As a small business owner, securing consistent funding is a major challenge. We tackle this by seeking grants, sponsorships, and partnerships with local entities. Managing and forecasting cash flow is also challenging due to limited funding and the unpredictable nature of sales. Additionally, serving underserved communities relies heavily on grant funding or government contracts, which are unpredictable and susceptible to changes in priorities or budget cuts. This unpredictability makes it essential to secure stable funding sources and accurately forecast financial needs, impacting our cash flow stability and requiring constant adaptability.”
+  utter_grants:
+    - text: “Finding and applying for grants is a challenging and time-consuming aspect of running my business. The world of grant opportunities is vast and often complicated, filled with specific criteria, application processes, and strict deadlines. Each grant has its unique requirements and reporting standards, which can be daunting to navigate, especially without extensive experience or dedicated resources for grant writing. Additionally, the competition for these grants is fierce, as many businesses compete for limited funding. This requires me not only to identify relevant grants but also to create applications that stand out from the rest. The effort involved in researching grants, understanding their specifics, and crafting compelling proposals is substantial.”
+  utter_budgeting_knowledge:
+    - text: "As a small minority-owned business owner, one of the major challenges I face is the lack of budgeting knowledge. Managing finances effectively is crucial for the sustainability and growth of any business, yet the complexities of budgeting were not something I was fully prepared for when I started. Without a strong foundation in financial planning, it's difficult to allocate resources wisely, predict cash flow, and plan for both short-term expenses and long-term investments. This gap in knowledge often leads to missed opportunities or financial missteps that can significantly impact my business's viability. I frequently find myself wishing for more accessible resources or training specifically designed to help minority entrepreneurs like myself master these essential skills."
+  utter_general_desire:
+    - text: "As a business owner, I'm looking for a comprehensive financial management tool that can streamline various aspects of my operations. Specifically, I need robust cash flow tracking to monitor incoming and outgoing funds effectively. Expense management is crucial as well; I want to easily categorize expenses and spot trends to optimize spending. Invoicing and payment functionalities need to be smooth and reliable, with support for automated reminders and easy tracking of receivables. Credit monitoring is also vital to keep an eye on my business credit health. Budgeting tools that help me plan financials based on historical data and future projections would be incredibly beneficial. Moreover, financial reporting should be detailed yet easy to understand, providing insights that help me make informed decisions. Lastly, the tool must have integration capabilities with other systems like banking, e-commerce, and payroll to ensure seamless operations."
+  utter_feature_cashflow:
+    - text: "Effective cash flow management is crucial for the survival and growth of my business. I need a tool that not only tracks real-time cash flow but also provides forecasts based on seasonal trends and past data. It would be helpful to have visual representations of cash flow, such as graphs and charts, which allow me to quickly assess financial health and make adjustments on the fly. Alerts for unusual transactions would also be beneficial, ensuring that I’m immediately aware of any unexpected changes in my financial status."
+  utter_feature_expensemanage:
+    - text: "Managing expenses efficiently is key to maintaining a healthy bottom line. I desire a tool that simplifies the recording and categorization of expenses. Features like receipt scanning, automatic categorization based on vendor or type of expense, and integration with credit card and bank accounts would streamline expense entry and reduce errors. A dashboard that highlights spending patterns and offers suggestions for cost savings would also add tremendous value, helping me to cut unnecessary costs and optimize budget allocation."
+  utter_feature_invoicingpayment:
+    - text: "For invoicing and payment processing, I need a solution that reduces the time and effort required to manage accounts receivable. Automated invoice creation, customizable templates, and the ability to send invoices directly via email or a mobile app would greatly improve efficiency. The tool should support multiple payment methods, including credit cards, bank transfers, and online payment platforms, ensuring that customers can pay easily and on time. Features like automatic payment reminders and late fees calculation would help in maintaining a steady cash flow, minimizing delays and defaults."
+  utter_feature_budgetingtools:
+    - text: "In my business, having an advanced budgeting tool is essential for keeping our finances in check. I currently track our budgets using basic spreadsheets, but it's becoming cumbersome as we grow. I'm particularly interested in a tool that supports zero-based budgeting, as it ensures every dollar is justified. Additionally, we operate across several departments and projects, so it's crucial to manage and monitor budgets separately for each. It's also vital that the tool can alert me when budgets are close to being exceeded to prevent overspending and maintain financial control."
+  utter_feature_financialreporting:
+    - text: "Financial reporting is at the heart of our strategic planning. The most critical reports for us are cash flow statements, profit and loss accounts, and balance sheets. I need these reports to be generated monthly to keep a tight grip on our financial health. Customizability in these reports is crucial as well; being able to tweak the layout and the data points displayed helps me focus on what's most important quickly. Currently, we consolidate financial data manually, which is prone to errors. I'd appreciate features that streamline this process, and having the capability to export these reports into formats like PDF and Excel is essential for sharing and analysis."
+  utter_feature_integration:
+    - text: "As we utilize a variety of tools for different aspects of our business, seamless integration capabilities are critical. We use QuickBooks for our accounting needs, Amex for corporate expenditures, Shopify for e-commerce, Stripe for payment processing, Capital One for our banking, and HubSpot to manage invoices and track finances. The ability to integrate these platforms with a central financial management system would be incredibly beneficial. It would streamline our operations significantly. I'm particularly interested in automation features that could trigger financial updates and actions across these platforms based on specific financial events or status changes. For example, updates in HubSpot when invoices are paid in Stripe, or real-time budget adjustments in our financial tool when expenses are recorded in Amex."
+  utter_willing_to_pay:
+    - text: "Many companies provided different responses in very different price ranges for this question. For example, Nbz alliance llc said their budget can vary between $20k-$50k based on the model they are provided. Acosta Cuts Texas Barber School, llc, on the other hand, said their budget is less than $500 a month. To learn more about the different companies, enter the name of the company."
+  utter_why_AI:
+    - text: "Having a personalized AI tool would be incredibly beneficial for small business owners like me, particularly in managing finances efficiently. This tool could mimic the functions of a CFO, managing business credit, and overseeing cash flow at a fraction of the cost of hiring a professional. It would provide real-time insights into financial transactions and help in budgeting and forecasting, crucial for businesses operating on tight budgets."
+  utter_AI_financial:
+    - text: "An AI tool would act as a financial advisor, guiding strategic decisions that align with long-term goals like expanding operations or enhancing payroll systems. It could also assist in securing funding by analyzing financial data to bolster applications for grants or loans and monitoring credit health to optimize financial opportunities. In essence, a personalized AI tool would consolidate multiple financial management functions into a single, cost-effective platform, helping small business owners manage their finances more effectively and drive growth."
